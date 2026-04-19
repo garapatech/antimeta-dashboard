@@ -3,9 +3,11 @@ ARG PORT=6767
 ENV PORT=${PORT}
 
 RUN datasette install \
+    datasette-search-all \
+    datasette-nteract-data-explorer \
     datasette-plot \
     datasette-vega \
-    datasette-search-all
+    datasette-dashboards
 
 WORKDIR /app
 EXPOSE ${PORT}
