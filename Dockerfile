@@ -4,10 +4,7 @@ ENV PORT=${PORT}
 
 RUN datasette install \
     datasette-search-all \
-    datasette-nteract-data-explorer \
-    datasette-plot \
-    datasette-vega \
-    datasette-dashboards
+    datasette-vega
 
 WORKDIR /app
 EXPOSE ${PORT}

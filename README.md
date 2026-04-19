@@ -7,7 +7,7 @@ Dashboard containerizado com [Datasette](https://datasette.io/) para explorar a 
 Este repositório entrega:
 
 - uma imagem baseada em `datasetteproject/datasette`
-- plugins `datasette-plot`, `datasette-vega` e `datasette-search-all`
+- plugins `datasette-plot`, `datasette-search-all`
 - execução via Docker Compose com volume bind para a pasta `data/`
 - workflow do GitHub Actions para build e publicação da imagem no GHCR
 
@@ -95,7 +95,6 @@ docker run --rm \
 
 O `Dockerfile` instala os seguintes plugins:
 
-- `datasette-plot`
 - `datasette-vega`
 - `datasette-search-all`
 
