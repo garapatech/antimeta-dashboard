@@ -1,5 +1,5 @@
 services:
-  antimeta-dashboard:
+  datasette:
     image: ghcr.io/nayetdet/datasette:latest
     deploy:
       mode: replicated
